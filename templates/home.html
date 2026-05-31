@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+    body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+}
+
+a{
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+div{
+    display: flex;
+    gap: 10px;
+}
+
+</style>
+</head>
+
+<body > 
+    <h1> Attendance Tracker</h1>
+    <p>
+        Track your attendance, monitor shortages,
+        and stay above the minimum attendance criteria.
+    </p>
+
+<div>
+    <a href="{{ url_for('login') }}"> Login </a>
+    <a href ="{{ url_for('register')  }}"> Register</a>
+</div>
+
+</body>
+
+</html>
